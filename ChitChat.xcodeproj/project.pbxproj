@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA12DDF619713FCD00EE0488 /* CGUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12DDF519713FCD00EE0488 /* CGUserDetailViewController.m */; };
+		EA46DF6D1970FFDC009E1B79 /* CGChitChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA46DF6C1970FFDC009E1B79 /* CGChitChatInputView.m */; };
+		EA46DF7019711FA6009E1B79 /* CGChitChatCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA46DF6F19711FA6009E1B79 /* CGChitChatCollectionViewCell.m */; };
+		EA46DF7319712749009E1B79 /* CGChitChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA46DF7219712749009E1B79 /* CGChitChatViewController.m */; };
+		EAAB150E19704A8D00BE0676 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB150D19704A8D00BE0676 /* Foundation.framework */; };
+		EAAB151019704A8D00BE0676 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB150F19704A8D00BE0676 /* CoreGraphics.framework */; };
+		EAAB151219704A8D00BE0676 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB151119704A8D00BE0676 /* UIKit.framework */; };
+		EAAB151819704A8D00BE0676 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAAB151619704A8D00BE0676 /* InfoPlist.strings */; };
+		EAAB151A19704A8D00BE0676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB151919704A8D00BE0676 /* main.m */; };
+		EAAB152119704A8E00BE0676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAB151F19704A8D00BE0676 /* Main.storyboard */; };
+		EAAB152619704A8E00BE0676 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAB152519704A8E00BE0676 /* Images.xcassets */; };
+		EAAB152D19704A8E00BE0676 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB152C19704A8E00BE0676 /* XCTest.framework */; };
+		EAAB152E19704A8E00BE0676 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB150D19704A8D00BE0676 /* Foundation.framework */; };
+		EAAB152F19704A8E00BE0676 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB151119704A8D00BE0676 /* UIKit.framework */; };
+		EAAB153719704A8E00BE0676 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAAB153519704A8E00BE0676 /* InfoPlist.strings */; };
+		EAAB153919704A8E00BE0676 /* ChitChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB153819704A8E00BE0676 /* ChitChatTests.m */; };
+		EAAB154A19704B7900BE0676 /* CGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB154519704B7900BE0676 /* CGAppDelegate.m */; };
+		EAAB154B19704B7900BE0676 /* CGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB154919704B7900BE0676 /* CGViewController.m */; };
+		EAAB154E19704BDB00BE0676 /* CGPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB154D19704BDB00BE0676 /* CGPeer.m */; };
+		EAAB155119704C7C00BE0676 /* CGChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB155019704C7C00BE0676 /* CGChatManager.m */; };
+		EAAB15551970531F00BE0676 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB15541970531F00BE0676 /* MultipeerConnectivity.framework */; };
+		EAAB15591970541500BE0676 /* CGUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB15581970541500BE0676 /* CGUserManager.m */; };
+		EAAB156319705BB100BE0676 /* NSObject+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB155E19705BB100BE0676 /* NSObject+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAAB156419705BB100BE0676 /* UIActionSheet+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB156019705BB100BE0676 /* UIActionSheet+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAAB156519705BB100BE0676 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAB156219705BB100BE0676 /* UIAlertView+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAAB153019704A8E00BE0676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAB150219704A8D00BE0676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAB150919704A8D00BE0676;
+			remoteInfo = ChitChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA12DDF419713FCD00EE0488 /* CGUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGUserDetailViewController.h; sourceTree = "<group>"; };
+		EA12DDF519713FCD00EE0488 /* CGUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGUserDetailViewController.m; sourceTree = "<group>"; };
+		EA46DF6B1970FFDC009E1B79 /* CGChitChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGChitChatInputView.h; sourceTree = "<group>"; };
+		EA46DF6C1970FFDC009E1B79 /* CGChitChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGChitChatInputView.m; sourceTree = "<group>"; };
+		EA46DF6E19711FA6009E1B79 /* CGChitChatCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGChitChatCollectionViewCell.h; sourceTree = "<group>"; };
+		EA46DF6F19711FA6009E1B79 /* CGChitChatCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGChitChatCollectionViewCell.m; sourceTree = "<group>"; };
+		EA46DF7119712749009E1B79 /* CGChitChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGChitChatViewController.h; sourceTree = "<group>"; };
+		EA46DF7219712749009E1B79 /* CGChitChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGChitChatViewController.m; sourceTree = "<group>"; };
+		EAAB150A19704A8D00BE0676 /* ChitChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChitChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAB150D19704A8D00BE0676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAAB150F19704A8D00BE0676 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAAB151119704A8D00BE0676 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAAB151519704A8D00BE0676 /* ChitChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChitChat-Info.plist"; sourceTree = "<group>"; };
+		EAAB151719704A8D00BE0676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAAB151919704A8D00BE0676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAAB151B19704A8D00BE0676 /* ChitChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChitChat-Prefix.pch"; sourceTree = "<group>"; };
+		EAAB152019704A8E00BE0676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAAB152519704A8E00BE0676 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAAB152B19704A8E00BE0676 /* ChitChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChitChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAB152C19704A8E00BE0676 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAAB153419704A8E00BE0676 /* ChitChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChitChatTests-Info.plist"; sourceTree = "<group>"; };
+		EAAB153619704A8E00BE0676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAAB153819704A8E00BE0676 /* ChitChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChitChatTests.m; sourceTree = "<group>"; };
+		EAAB154419704B7900BE0676 /* CGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAppDelegate.h; sourceTree = "<group>"; };
+		EAAB154519704B7900BE0676 /* CGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAppDelegate.m; sourceTree = "<group>"; };
+		EAAB154819704B7900BE0676 /* CGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGViewController.h; sourceTree = "<group>"; };
+		EAAB154919704B7900BE0676 /* CGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGViewController.m; sourceTree = "<group>"; };
+		EAAB154C19704BDB00BE0676 /* CGPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPeer.h; sourceTree = "<group>"; };
+		EAAB154D19704BDB00BE0676 /* CGPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPeer.m; sourceTree = "<group>"; };
+		EAAB154F19704C7C00BE0676 /* CGChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGChatManager.h; sourceTree = "<group>"; };
+		EAAB155019704C7C00BE0676 /* CGChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGChatManager.m; sourceTree = "<group>"; };
+		EAAB1553197051DF00BE0676 /* CGConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGConstants.h; sourceTree = "<group>"; };
+		EAAB15541970531F00BE0676 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		EAAB15571970541500BE0676 /* CGUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGUserManager.h; sourceTree = "<group>"; };
+		EAAB15581970541500BE0676 /* CGUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGUserManager.m; sourceTree = "<group>"; };
+		EAAB155C19705BB100BE0676 /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
+		EAAB155D19705BB100BE0676 /* NSObject+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		EAAB155E19705BB100BE0676 /* NSObject+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		EAAB155F19705BB100BE0676 /* UIActionSheet+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		EAAB156019705BB100BE0676 /* UIActionSheet+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		EAAB156119705BB100BE0676 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		EAAB156219705BB100BE0676 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAAB150719704A8D00BE0676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAB15551970531F00BE0676 /* MultipeerConnectivity.framework in Frameworks */,
+				EAAB151019704A8D00BE0676 /* CoreGraphics.framework in Frameworks */,
+				EAAB151219704A8D00BE0676 /* UIKit.framework in Frameworks */,
+				EAAB150E19704A8D00BE0676 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAB152819704A8E00BE0676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAB152D19704A8E00BE0676 /* XCTest.framework in Frameworks */,
+				EAAB152F19704A8E00BE0676 /* UIKit.framework in Frameworks */,
+				EAAB152E19704A8E00BE0676 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA46DF6A1970FFA2009E1B79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA46DF6B1970FFDC009E1B79 /* CGChitChatInputView.h */,
+				EA46DF6C1970FFDC009E1B79 /* CGChitChatInputView.m */,
+				EA46DF6E19711FA6009E1B79 /* CGChitChatCollectionViewCell.h */,
+				EA46DF6F19711FA6009E1B79 /* CGChitChatCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAAB150119704A8D00BE0676 = {
+			isa = PBXGroup;
+			children = (
+				EAAB151319704A8D00BE0676 /* ChitChat */,
+				EAAB153219704A8E00BE0676 /* ChitChatTests */,
+				EAAB150C19704A8D00BE0676 /* Frameworks */,
+				EAAB150B19704A8D00BE0676 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAAB150B19704A8D00BE0676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB150A19704A8D00BE0676 /* ChitChat.app */,
+				EAAB152B19704A8E00BE0676 /* ChitChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAAB150C19704A8D00BE0676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB15541970531F00BE0676 /* MultipeerConnectivity.framework */,
+				EAAB150D19704A8D00BE0676 /* Foundation.framework */,
+				EAAB150F19704A8D00BE0676 /* CoreGraphics.framework */,
+				EAAB151119704A8D00BE0676 /* UIKit.framework */,
+				EAAB152C19704A8E00BE0676 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAAB151319704A8D00BE0676 /* ChitChat */ = {
+			isa = PBXGroup;
+			children = (
+				EA46DF6A1970FFA2009E1B79 /* Views */,
+				EAAB155A1970597200BE0676 /* External */,
+				EAAB1556197053F900BE0676 /* UserManager */,
+				EAAB155219704CA200BE0676 /* Constants */,
+				EAAB154319704B7900BE0676 /* AppDelegate */,
+				EAAB154619704B7900BE0676 /* Model */,
+				EAAB154719704B7900BE0676 /* ViewControllers */,
+				EAAB154219704AFD00BE0676 /* ChatFramework */,
+				EAAB151F19704A8D00BE0676 /* Main.storyboard */,
+				EAAB152519704A8E00BE0676 /* Images.xcassets */,
+				EAAB151419704A8D00BE0676 /* Supporting Files */,
+			);
+			path = ChitChat;
+			sourceTree = "<group>";
+		};
+		EAAB151419704A8D00BE0676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB151519704A8D00BE0676 /* ChitChat-Info.plist */,
+				EAAB151619704A8D00BE0676 /* InfoPlist.strings */,
+				EAAB151919704A8D00BE0676 /* main.m */,
+				EAAB151B19704A8D00BE0676 /* ChitChat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAAB153219704A8E00BE0676 /* ChitChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB153819704A8E00BE0676 /* ChitChatTests.m */,
+				EAAB153319704A8E00BE0676 /* Supporting Files */,
+			);
+			path = ChitChatTests;
+			sourceTree = "<group>";
+		};
+		EAAB153319704A8E00BE0676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB153419704A8E00BE0676 /* ChitChatTests-Info.plist */,
+				EAAB153519704A8E00BE0676 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAAB154219704AFD00BE0676 /* ChatFramework */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB154F19704C7C00BE0676 /* CGChatManager.h */,
+				EAAB155019704C7C00BE0676 /* CGChatManager.m */,
+			);
+			path = ChatFramework;
+			sourceTree = "<group>";
+		};
+		EAAB154319704B7900BE0676 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB154419704B7900BE0676 /* CGAppDelegate.h */,
+				EAAB154519704B7900BE0676 /* CGAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EAAB154619704B7900BE0676 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB154C19704BDB00BE0676 /* CGPeer.h */,
+				EAAB154D19704BDB00BE0676 /* CGPeer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAAB154719704B7900BE0676 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB154819704B7900BE0676 /* CGViewController.h */,
+				EAAB154919704B7900BE0676 /* CGViewController.m */,
+				EA46DF7119712749009E1B79 /* CGChitChatViewController.h */,
+				EA46DF7219712749009E1B79 /* CGChitChatViewController.m */,
+				EA12DDF419713FCD00EE0488 /* CGUserDetailViewController.h */,
+				EA12DDF519713FCD00EE0488 /* CGUserDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EAAB155219704CA200BE0676 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB1553197051DF00BE0676 /* CGConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EAAB1556197053F900BE0676 /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB15571970541500BE0676 /* CGUserManager.h */,
+				EAAB15581970541500BE0676 /* CGUserManager.m */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
+		EAAB155A1970597200BE0676 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB155B19705BB100BE0676 /* MKAdditions */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		EAAB155B19705BB100BE0676 /* MKAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB155C19705BB100BE0676 /* MKBlockAdditions.h */,
+				EAAB155D19705BB100BE0676 /* NSObject+MKBlockAdditions.h */,
+				EAAB155E19705BB100BE0676 /* NSObject+MKBlockAdditions.m */,
+				EAAB155F19705BB100BE0676 /* UIActionSheet+MKBlockAdditions.h */,
+				EAAB156019705BB100BE0676 /* UIActionSheet+MKBlockAdditions.m */,
+				EAAB156119705BB100BE0676 /* UIAlertView+MKBlockAdditions.h */,
+				EAAB156219705BB100BE0676 /* UIAlertView+MKBlockAdditions.m */,
+			);
+			path = MKAdditions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAAB150919704A8D00BE0676 /* ChitChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAB153C19704A8E00BE0676 /* Build configuration list for PBXNativeTarget "ChitChat" */;
+			buildPhases = (
+				EAAB150719704A8D00BE0676 /* Frameworks */,
+				EAAB150619704A8D00BE0676 /* Sources */,
+				EAAB150819704A8D00BE0676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChitChat;
+			productName = ChitChat;
+			productReference = EAAB150A19704A8D00BE0676 /* ChitChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAAB152A19704A8E00BE0676 /* ChitChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAB153F19704A8E00BE0676 /* Build configuration list for PBXNativeTarget "ChitChatTests" */;
+			buildPhases = (
+				EAAB152719704A8E00BE0676 /* Sources */,
+				EAAB152819704A8E00BE0676 /* Frameworks */,
+				EAAB152919704A8E00BE0676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAB153119704A8E00BE0676 /* PBXTargetDependency */,
+			);
+			name = ChitChatTests;
+			productName = ChitChatTests;
+			productReference = EAAB152B19704A8E00BE0676 /* ChitChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAAB150219704A8D00BE0676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CocoaGarage;
+				TargetAttributes = {
+					EAAB152A19704A8E00BE0676 = {
+						TestTargetID = EAAB150919704A8D00BE0676;
+					};
+				};
+			};
+			buildConfigurationList = EAAB150519704A8D00BE0676 /* Build configuration list for PBXProject "ChitChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAAB150119704A8D00BE0676;
+			productRefGroup = EAAB150B19704A8D00BE0676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAB150919704A8D00BE0676 /* ChitChat */,
+				EAAB152A19704A8E00BE0676 /* ChitChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAAB150819704A8D00BE0676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAB152619704A8E00BE0676 /* Images.xcassets in Resources */,
+				EAAB151819704A8D00BE0676 /* InfoPlist.strings in Resources */,
+				EAAB152119704A8E00BE0676 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAB152919704A8E00BE0676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAB153719704A8E00BE0676 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAAB150619704A8D00BE0676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAB155119704C7C00BE0676 /* CGChatManager.m in Sources */,
+				EAAB154A19704B7900BE0676 /* CGAppDelegate.m in Sources */,
+				EAAB156519705BB100BE0676 /* UIAlertView+MKBlockAdditions.m in Sources */,
+				EAAB156419705BB100BE0676 /* UIActionSheet+MKBlockAdditions.m in Sources */,
+				EAAB154E19704BDB00BE0676 /* CGPeer.m in Sources */,
+				EA46DF6D1970FFDC009E1B79 /* CGChitChatInputView.m in Sources */,
+				EA12DDF619713FCD00EE0488 /* CGUserDetailViewController.m in Sources */,
+				EAAB151A19704A8D00BE0676 /* main.m in Sources */,
+				EA46DF7019711FA6009E1B79 /* CGChitChatCollectionViewCell.m in Sources */,
+				EAAB15591970541500BE0676 /* CGUserManager.m in Sources */,
+				EAAB156319705BB100BE0676 /* NSObject+MKBlockAdditions.m in Sources */,
+				EA46DF7319712749009E1B79 /* CGChitChatViewController.m in Sources */,
+				EAAB154B19704B7900BE0676 /* CGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAB152719704A8E00BE0676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAB153919704A8E00BE0676 /* ChitChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAAB153119704A8E00BE0676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAB150919704A8D00BE0676 /* ChitChat */;
+			targetProxy = EAAB153019704A8E00BE0676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAAB151619704A8D00BE0676 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAB151719704A8D00BE0676 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAAB151F19704A8D00BE0676 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAB152019704A8E00BE0676 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAAB153519704A8E00BE0676 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAB153619704A8E00BE0676 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAAB153A19704A8E00BE0676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Devin Flaherty (678PX4288G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Devin Flaherty (678PX4288G)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAAB153B19704A8E00BE0676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Devin Flaherty (678PX4288G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Devin Flaherty (678PX4288G)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAAB153D19704A8E00BE0676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChitChat/ChitChat-Prefix.pch";
+				INFOPLIST_FILE = "ChitChat/ChitChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAAB153E19704A8E00BE0676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChitChat/ChitChat-Prefix.pch";
+				INFOPLIST_FILE = "ChitChat/ChitChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAAB154019704A8E00BE0676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChitChat.app/ChitChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChitChat/ChitChat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChitChatTests/ChitChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAAB154119704A8E00BE0676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChitChat.app/ChitChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChitChat/ChitChat-Prefix.pch";
+				INFOPLIST_FILE = "ChitChatTests/ChitChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAAB150519704A8D00BE0676 /* Build configuration list for PBXProject "ChitChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAB153A19704A8E00BE0676 /* Debug */,
+				EAAB153B19704A8E00BE0676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAB153C19704A8E00BE0676 /* Build configuration list for PBXNativeTarget "ChitChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAB153D19704A8E00BE0676 /* Debug */,
+				EAAB153E19704A8E00BE0676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAB153F19704A8E00BE0676 /* Build configuration list for PBXNativeTarget "ChitChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAB154019704A8E00BE0676 /* Debug */,
+				EAAB154119704A8E00BE0676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAAB150219704A8D00BE0676 /* Project object */;
+}
